@@ -18,7 +18,7 @@
   <df-messenger-chat-bubble
    chat-width="393"
    chat-title-style="font-size: 20px; color: red;"
-   chat-title="Cloud Genie Beta">
+   chat-title="Cloud Genie (Beta)">
   </df-messenger-chat-bubble>
 </df-messenger>
 <style>
@@ -28,6 +28,15 @@
     bottom: 16px;
     right: 16px;
   }
+  df-messenger .chat-title::after {
+    content: "Beta";
+    visibility: visible;
+    display: block;
+    font-size: 70%; /* Adjust size as needed */
+    position: relative;
+    top: -0.5em; /* Adjust top as needed */
+    left: -5em; /* Adjust left to position "Beta" correctly */
+}
 </style>
 <h1>RTL Chat</h1>
 </body>
